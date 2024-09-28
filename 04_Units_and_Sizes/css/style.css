@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+h1 {
+    border: 2px dashed red;
+    font-size: 2rem;
+    padding: .25em;
+    width : 50%; 
+    /* 50% of the parent element */
+}
+
+body {
+    /* min-height: 100vh; */
+    background-color: #FFE0B5;
+    /* width: 100vw; */
+    /* 
+    here "width:100%" is a better choice bcz if the content grows and we get a scroll-bar then for that little space taken by scroll-bar a horizontal scroll-bar will also show up which most developers don't like
+    */
+}
+
+main {
+    /* width: 50vw; */
+    /* vw means viewport width, it is relative to the view area means screen size */
+    /* but it's sometimes better to use % rather than vw */
+
+
+    /* background-color: rgba(135, 207, 235, 0.5); */
+    font-size: 2rem;
+    /* rem -> relative to the font-size of root element */
+}
+
+p {
+    padding: 2rem;
+    font-size : .8em;
+    /* em -> relative to the font-size of parent element */
+    /* but usually it's not recommended to use em with font-size, u can use it for margin or padding */
+    
+    width : 35ch;
+    /* ch means character, 35ch means 35 characters per line */
+}
