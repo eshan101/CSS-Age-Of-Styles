@@ -1,0 +1,51 @@
+*{
+    /* This is universal selector */
+    /* rules of universal selector will not be inherited it will be directly applied to every element */
+    /* for example : border applied in universal selector will make border around every element of the page, but border applied on body will only create one border bcz border property is not inherited */
+    /* Note : CSS reads from top to bottom but priority of specificity is higher */
+
+    font-family: monospace;
+    /* border: 1px solid purple; */
+}
+
+body{
+    font-size: 20px;
+    /* border: 1px solid purple; */
+}
+/* font or typography rules are inherited to the child elements like color rule of body would even affect h1, h2, p, etc... */
+
+h1, h2{
+    color: blue;
+}
+/* we use "comma (,)" to select multiple elements */
+
+p {
+    color: brown;
+    /* color: brown!important; */
+    /* it is not recommended to use but it helps to give it highest priority and override every rule */
+}
+
+p {
+    color : red;
+}
+
+p span{
+    background-color:aquamarine;
+    text-transform:uppercase;
+}
+/* "p span" means any "span" that is inside "p" tag */
+
+/* . is used for selecting class */
+.gray {
+    color : grey;
+}
+
+/* # is used for selecting id */
+#second {
+    font-style: italic;
+}
+/* form elements do not inherit, so we use inherit rule to make it inherit */
+
+input, button, textarea, select {
+    font:inherit;
+}
