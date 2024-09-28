@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 1</title>
+    <!-- priority order :- inline css > style element > external css -->
+    <style>
+      /* This is style element and has priority above external css but it's not usually recommended when you are working on some good project */
+      p {
+        color: purple;
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- This is used to link external css to the html file -->
+
+  </head>
+  <body>
+    <p style="color: blue">I am learning CSS for Web Development</p>
+    <p style="color: limegreen;">I am test css</p>
+    <!-- inline css is not recommended to be used but it has the highest priority -->
+  </body>
+</html>
+
+<!-- vscode code to generate paragraphs ( p*5>lorem20 ) it means 5 paragraphs with 20 words-->
